@@ -16,7 +16,7 @@ import PlaceList from './components/PlaceList';
 function App() {
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView style={styles.container}>
         <FlatCards />
         <ScrollCards />
         <BigCard />
@@ -26,4 +26,10 @@ function App() {
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+  },
+});
 export default App;
